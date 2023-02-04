@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div style=" display:flex;justify-content:center; font-weight: 800; font-size: 20px;margin-top: 20px;">TODOs
+            List</div>
+        <div>
+            <p>Title</p>
+            <input class="input-text" type="text">
+            <p>Description</p>
+            <textarea id="comment-text" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn">Add to list</button>
+            <button class="btn">Clear List</button>
+        </div>
+
+        <h2 style="font-family:system-ui;">Yours Items</h2>
+
+        <table>
+            <tbody id="tableBody"></tbody>
+
+            <thead>
+                <tr>
+                    <th> SNo</th>
+                    <th>Item Title</th>
+                    <th>Item Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
